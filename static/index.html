@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/kurento.png" type="image/png" />
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/demo-console/index.css">
+    <link rel="stylesheet" href="bower_components/ekko-lightbox/dist/ekko-lightbox.min.css">
+    <link rel="stylesheet" href="css/kurento.css">
+
+    <script src="bower_components/webrtc-adapter/release/adapter.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/demo-console/index.js"></script>
+    <script src="bower_components/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+
+    <script src="bower_components/kurento-utils/js/kurento-utils.js"></script>
+    <script src="https://cdn.WebRTC-Experiment.com/getScreenId.js"></script>
+
+    <script src="js/shared.js"></script>
+    <script src="js/index.js"></script>
+    <title>Kurento Tutorial 3: Video Call 1 to N with WebRTC</title>
+  </head>
+  <body>
+
+
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+            <a id="webcam" href="#" class="btn "> Start webcam</a>
+            <a id="screen" href="#" class="btn "> Share screen</a>
+            <a id="startPreview" href="#" class = "btn btn-secondary"> Start preview </a>
+            <a id="terminate" href="#" class="btn btn-danger"> Stop</a>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <label id="screenVideoLabel" class="control-label" for="webcamVideo">Camera</label>
+          <video id="webcamVideo" autoplay width=100%  poster="img/webrtc.png"></video>
+        </div>
+        <div class="col-md-5">
+          <label class="control-label" for="screenVideo" hidden=true >Screen</label>
+          <video id="screenVideo" hidden=true autoplay width=100%  poster="img/webrtc.png"></video>
+        </div>
+        <div class="col-md-5">
+          <label class="control-label" for="previewVideo">Preview</label>
+          <video id="previewVideo" autoplay width=100% poster="img/webrtc.png"></video>
+        </div>
+      </div>
+      <div class="row">
+        <label class="control-label" for="console">Console</label><br><br>
+        <div id="console" class="democonsole">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

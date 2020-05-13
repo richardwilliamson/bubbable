@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/kurento.png" type="image/png" />
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/demo-console/index.css">
+    <link rel="stylesheet" href="bower_components/ekko-lightbox/dist/ekko-lightbox.min.css">
+    <link rel="stylesheet" href="css/kurento.css">
+
+    <script src="bower_components/webrtc-adapter/release/adapter.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/demo-console/index.js"></script>
+    <script src="bower_components/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+
+    <script src="bower_components/kurento-utils/js/kurento-utils.js"></script>
+
+    <script src="js/shared.js"></script>
+    <script src="js/control.js"></script>
+
+    <style>
+        .sourceSelected {background-color: powderblue;}
+    </style>
+
+    <title>Kurento Tutorial 3: Video Call 1 to N with WebRTC</title>
+  </head>
+  <body>
+
+
+    <div class="container">
+      <div class="row">
+          <div class="row">
+            <div class="col-md-12">
+              <a id="startVideo" href="#" class="btn"> Start Video </a>
+              <a id="startFacebook" href="#" class = "btn"> Start Stream to facebook </a>
+              <a id="startYouTube" href="#" class = "btn"> Start Stream to youTube </a>
+              <a id="terminate" href="#" class="btn btn-danger"> Stop </a>
+            </div>
+          </div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col-md-3">
+          <list id="previewSourceList">
+            <li> cam 1 </li>
+          </list>
+        </div>
+        <div class="col-md-6">
+          <p>Gallery</p>
+          <div id="galleryVideoDiv" class="text-center" width=100%>
+            <video id="galleryVideo" autoplay width=100% poster="img/webrtc.png"></video>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <list id="programmeSourceList">
+            <li> cam 1 </li>
+          </list>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <p>preview</p>
+          <video id="previewVideo" autoplay width=100% poster="img/webrtc.png"></video>
+          <div >Selected input: <div id="previewSourceLabel" style="display:inline;">1</div></div>
+        </div>
+        <div class="col-md-2">
+          <br><br><br><br>
+          <a href="#" id="takeButton" style="vertical-align: middle">TAKE</a>
+        </div>
+        <div class="col-md-5">
+          <p>programme</p>
+          <video id="programmeVideo" autoplay width=100% poster="img/webrtc.png"></video>
+          <div >Selected input: <div id="programmeSourceLabel" style="display:inline;">1</div></div>
+
+        </div>
+      </div>
+      <div class="row">
+        <label class="control-label" for="console">Console</label><br><br>
+        <div id="console" class="democonsole">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
