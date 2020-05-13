@@ -1,22 +1,3 @@
-[![License badge](https://img.shields.io/badge/license-Apache2-orange.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-[![Documentation badge](https://readthedocs.org/projects/fiware-orion/badge/?version=latest)](http://doc-kurento.readthedocs.org/en/latest/)
-[![Docker badge](https://img.shields.io/docker/pulls/fiware/orion.svg)](https://hub.docker.com/r/fiware/stream-oriented-kurento/)
-[![Support badge]( https://img.shields.io/badge/support-sof-yellowgreen.svg)](http://stackoverflow.com/questions/tagged/kurento)
-
-[![][KurentoImage]][Kurento]
-
-Copyright © 2013-2016 [Kurento]. Licensed under [Apache 2.0 License].
-
-kurento-one2many-call
-=====================
-
-Kurento Java Tutorial: WebRTC one to many video call.
-
-Running this tutorial
----------------------
-
-In order to run this tutorial, please read the following [instructions].
-
 What is Kurento
 ---------------
 
