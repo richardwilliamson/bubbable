@@ -1210,8 +1210,8 @@ function onYouTubeRtpProcessOffer(error, sdpAnswer) {
 var startedYouTube = false;
 function startYouTubeFfmpeg()
 {
-  console.log("disabled youtube ffmpeg");
-  return;
+  // console.log("disabled youtube ffmpeg");
+  // return;
   //console.log("&&&&&& DISABLED FFMPEG&&&&&");
   //return;
   var yt_url = 'rtmp://a.rtmp.youtube.com/live2';
