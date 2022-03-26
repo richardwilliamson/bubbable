@@ -11,7 +11,7 @@
     "fluent-ffmpeg": "^2.1.2",
     "fs": "0.0.1-security",
     "kurento-client": "Kurento/kurento-client-js",
-    "minimist": "^1.1.1",
+    "minimist": "^1.2.6",
     "tmp": "^0.2.1",
     "webrtc-screen-capturing": "^1.0.1",
     "ws": "^7.1.0"
